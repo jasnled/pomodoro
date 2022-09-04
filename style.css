@@ -1,0 +1,118 @@
+:root{
+    --tomato:tomato;
+    --fontP:monospace;
+    --cBeige:beige;
+    --sFontP:1.6rem;
+    --sFontS:1.2rem;
+    --primFont:4.8rem;
+    --seconFont:2.4rem;
+    --marg: 2rem;
+    --bordSmall: 0.5rem ;
+    --bordMed: 2rem ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: monospace;
+}
+
+.container {
+    background-color:var(--cBeige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 50rem;
+    border-radius:var(--bordMed);
+
+}
+
+.title {
+    color:var(--tomato);
+    font-size:var(--primFont) ;
+    margin: var(--marg);
+
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    height: 12vh;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.menu-item{
+    background-color: var(--tomato);
+    color: var(--cBeige);
+    font-size: var(--seconFont);
+    border-radius: var(--bordMed);
+    padding: 1rem 3rem;
+    
+    
+}
+.menu-item:nth-child(1){
+    margin-left:3rem;
+    cursor: pointer;
+}
+.menu-item:nth-child(3){
+    margin-right:3rem;
+    
+}
+
+
+main {
+    display: flex;
+    background-color: var(--tomato);
+    height: 88vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.options{
+    font-size: 2.6rem;
+    display: flex;
+    cursor: pointer;
+    top: 0;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
+    padding-bottom: var(--marg) ;
+}
+
+.options li{
+    background-color: var(--tomato);
+    border-radius: var(--bordSmall);
+    margin: var(--marg) 1rem;
+    padding: 0.3rem;
+}
+.timer {
+    background-color: var(--tomato);
+    font-size: var(--primFont);
+    margin: var(--marg);
+    padding: var(--marg);
+    border-radius: var(--bordSmall);
+}
+.start {
+    font-size: var(--primFont);
+    background-color: black;
+    color: var(--tomato);
+    border-radius: var(--bordMed);
+    margin-top:var(--marg);
+    padding: 0 var(--marg);
+    cursor: pointer;
+}
+
+@media (max-width: 761px){
+    .menu-item{
+        display: none;
+    }
+}
+

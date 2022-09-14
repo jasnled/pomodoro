@@ -59,11 +59,11 @@ html {
     
 }
 .menu-item:nth-child(1){
-    margin-left:3rem;
+    margin-left:10rem;
     cursor: pointer;
 }
 .menu-item:nth-child(3){
-    margin-right:3rem;
+    margin-right:10rem;
     
 }
 
